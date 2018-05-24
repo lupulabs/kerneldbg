@@ -11,4 +11,4 @@ esta se tiene que hacer primero porque va a ser la que va a crear el pipe de com
 
 creamos un windows 7 limpio con vmware y despues le aNIadimos un puerto serie con el siguiente formato
 
-!(https://github.com/lupulabs/kerneldbg/blob/master/img/confdebugee.png)
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/confdebugee.png)
