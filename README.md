@@ -43,4 +43,13 @@ desde ambas maquinas configuramos putty para que trabaje asi:
 * 115200 es el baudrate que definimos igual en ambas maquinas para que se entiendan
 * y Serial porque queremos que se comuniquen por este pseudo puerto para activar el debugger remoto
 
+Abrimos la comunicacion y escribimos en la ventana, no aparecera nada, pero si vemos del otro lado
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/msg1.png)
+
+y desde la maquina que escribimos tambien podemos enviar data al otro lado
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/msg2.png)
+
+ahi tenemos un full duplex sobre serial, ya descartamos esta parte
+
+## haciendo que el debugger envie la info como un pro
 
