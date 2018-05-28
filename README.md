@@ -60,5 +60,22 @@ despues de hacer lo anterior, si miramos la lista de bcdedit tenemos
 
 ya tenemos la maquina lista para que envie la informacion de depuracion
 
+configuramos un toque con msconfig
+![atl text](https://github.com/lupulabs/kerneldbg/blob/master/img/msfconfig.png)
+
 reiniciamos la maquina, elegimos ese modo de booteo y despues
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/debugon.png)
+
+# viendo la ejecucion desde el dbg
+ya la guest debugee esta lista, vamos a setear el windbg para que nos tome los valores estos
+
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/windbg.png)
+
+reiniciamos la maquina y vemos como comienza a listar la ejecucion
+
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/exec.png)
+
+# troubleshooting
+si vemos que no anda, lo primero que podemos hacer es verificar que el debugge nos esta enviando la fruta por el com2, para ver eso levantamos el putty y vemos si nos llegan los mensajes
+
 
