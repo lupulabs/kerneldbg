@@ -61,7 +61,7 @@ despues de hacer lo anterior, si miramos la lista de bcdedit tenemos
 ya tenemos la maquina lista para que envie la informacion de depuracion
 
 configuramos un toque con msconfig
-![atl text](https://github.com/lupulabs/kerneldbg/blob/master/img/msfconfig.png)
+![atl text](https://github.com/lupulabs/kerneldbg/blob/master/img/msconfig.png)
 
 reiniciamos la maquina, elegimos ese modo de booteo y despues
 ![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/debugon.png)
@@ -78,4 +78,12 @@ reiniciamos la maquina y vemos como comienza a listar la ejecucion
 # troubleshooting
 si vemos que no anda, lo primero que podemos hacer es verificar que el debugge nos esta enviando la fruta por el com2, para ver eso levantamos el putty y vemos si nos llegan los mensajes
 
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/trouble.png)
 
+tambien hay otro problema que es comun, por ahi el SXS envia millones de mensajes de debug, para desactivar eso, vamos al debuggee y aNIadimos una entrada en el registro 
+
+Created the key "HKLM\SYSTEM\CurrentControlSet\Contrl\Session Manager\Debug Print Filter"
+In this key Added a REG_DWORD Value "nt!Kd_SXS_Mask"
+Tried with 0x00000000 and 0xFFFFFFFF
+
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/trouble2.png)
