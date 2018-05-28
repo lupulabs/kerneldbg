@@ -51,5 +51,14 @@ y desde la maquina que escribimos tambien podemos enviar data al otro lado
 
 ahi tenemos un full duplex sobre serial, ya descartamos esta parte
 
-## haciendo que el debugger envie la info como un pro
+## haciendo que el debugge envie la info de depuracion
+para eso tenemos que activar el debugger desde el inicio
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/bcdedit.png)
+
+despues de hacer lo anterior, si miramos la lista de bcdedit tenemos
+![alt text](https://github.com/lupulabs/kerneldbg/blob/master/img/bcdedit2.png)
+
+ya tenemos la maquina lista para que envie la informacion de depuracion
+
+reiniciamos la maquina, elegimos ese modo de booteo y despues
 
